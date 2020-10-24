@@ -6,12 +6,12 @@
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: $title-light-theme-color;
-}
 
-.logo__text {
-  color: $accent-color;
-}
+  &--dark-theme {
+    color: $title-dark-theme-color;
+  }
 
-.logo--dark-theme {
-  color: $title-dark-theme-color;
+  &__text {
+    color: $accent-color;
+  }
 }
