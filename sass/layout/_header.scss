@@ -25,11 +25,11 @@
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
-  color: var(--title-light-theme-color);
+  color: $title-light-theme-color;
 
   transition-property: color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-function);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-function;
 }
 
 .navigation__link:hover,
@@ -38,7 +38,7 @@
 .mail:focus,
 .tel:hover,
 .tel:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .address {
@@ -63,11 +63,11 @@
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
-  color: var(--description-color);
+  color: $description-color;
 
   transition-property: color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-function);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-function;
 }
 
 .mail__icon,
@@ -76,8 +76,8 @@
   margin-right: 10px;
 
   transition-property: fill;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--cubic-bezier);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-function;
 }
 
 .mail:hover .mail__icon,
@@ -91,7 +91,7 @@
   display: flex;
   flex-flow: column;
   position: relative;
-  color: var(--accent-color);
+  color: $accent-color;
 }
 .navigation__link--current:after {
   content: "";
@@ -102,5 +102,5 @@
   position: absolute;
   bottom: -1px;
 
-  background: var(--accent-color);
+  background: $accent-color;
 }

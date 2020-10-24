@@ -7,7 +7,7 @@
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  color: var(--title-dark-theme-color);
+  color: $title-dark-theme-color;
   cursor: pointer;
 
   padding: 10px;
@@ -15,10 +15,10 @@
   border-radius: 4px;
   border-style: none;
   text-align: center;
-  background: var(--accent-color);
-}
+  background: $accent-color;
 
-.button__icon {
-  margin-left: 10px;
-  fill: var(--card-bg);
+  &__icon {
+    margin-left: 10px;
+    fill: $card-bg;
+  }
 }

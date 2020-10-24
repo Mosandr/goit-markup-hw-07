@@ -28,10 +28,10 @@
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: var(--title-dark-theme-color-alpha);
+  color: $title-dark-theme-color-alpha;
 }
 .footer__map {
-  color: var(--title-dark-theme-color);
+  color: $title-dark-theme-color;
 }
 
 .footer-social-links {
@@ -42,8 +42,8 @@
 .subscribe-form__title {
   margin-top: 0px;
   margin-bottom: 20px;
-  color: var(--title-dark-theme-color);
-  font-family: var(--main-font);
+  color: $title-dark-theme-color;
+  font-family: $main-font;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.143;
@@ -64,7 +64,7 @@
   height: 50px;
   padding: 15px;
 
-  color: var(--title-dark-theme-color);
+  color: $title-dark-theme-color;
   cursor: pointer;
 
   background: transparent;
@@ -77,5 +77,5 @@
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: var(--title-dark-theme-color-alpha);
+  color: $title-dark-theme-color-alpha;
 }

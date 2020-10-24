@@ -9,10 +9,10 @@
   line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-light-theme-color);
+  color: $title-light-theme-color;
 
-  transition: color var(--transition-duration) var(--transition-function),
-    background var(--transition-duration) var(--transition-function);
+  transition: color $transition-duration $transition-function,
+    background $transition-duration $transition-function;
 }
 .filter-buttons {
   display: flex;
@@ -27,6 +27,6 @@
 
 .filter-btn:hover,
 .filter-btn:focus {
-  color: var(--title-dark-theme-color);
-  background: var(--accent-color);
+  color: $title-dark-theme-color;
+  background: $accent-color;
 }

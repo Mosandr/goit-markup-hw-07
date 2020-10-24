@@ -8,7 +8,7 @@
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
 
-  transition: opacity var(--transition-duration) var(--transition-function);
+  transition: opacity $transition-duration $transition-function;
 }
 
 .backdrop.is-hidden {
@@ -25,10 +25,10 @@
   min-width: 528px;
   min-height: 581px;
 
-  background: var(--card-bg);
+  background: $card-bg;
 
   transform: translate(-50%, -50%) scale(1);
-  transition: transform var(--transition-duration) var(--transition-function);
+  transition: transform $transition-duration $transition-function;
 }
 
 .backdrop.is-hidden .modal {
@@ -50,8 +50,8 @@
 
 .close-btn__icon {
   transition-property: fill;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-function);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-function;
 }
 
 .close-btn:hover .close-btn__icon,
@@ -67,7 +67,7 @@
   line-height: 1.167;
   letter-spacing: 0.01em;
 
-  color: var(--description-color);
+  color: $description-color;
 }
 
 .modal-form__title {
@@ -76,7 +76,7 @@
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-light-theme-color);
+  color: $title-light-theme-color;
 
   margin-top: 0;
   margin-bottom: 12px;
@@ -96,12 +96,12 @@
   margin-top: 4px;
   cursor: pointer;
 
-  transition: border-color var(--transition-duration) var(--transition-function);
+  transition: border-color $transition-duration $transition-function;
 }
 
 .modal-field__input:focus {
   outline: none;
-  border-color: var(--accent-color);
+  border-color: $accent-color;
 }
 
 .modal-field__wrapper {
@@ -114,13 +114,13 @@
   position: absolute;
   left: 12px;
   top: 50%;
-  fill: var(--title-light-theme-color);
+  fill: $title-light-theme-color;
   transform: translateY(-50%);
-  transition: fill var(--transition-duration) var(--transition-function);
+  transition: fill $transition-duration $transition-function;
 }
 
 .modal-field__input:focus + .modal-field__icon {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .modal-form__textarea {
@@ -136,12 +136,12 @@
   margin-bottom: 20px;
   cursor: pointer;
 
-  transition: border-color var(--transition-duration) var(--transition-function);
+  transition: border-color $transition-duration $transition-function;
 }
 
 .modal-form__textarea:focus {
   outline: none;
-  border-color: var(--accent-color);
+  border-color: $accent-color;
 }
 
 .modal-form__textarea::placeholder {
@@ -162,12 +162,12 @@
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: var(--description-color);
+  color: $description-color;
 }
 
 .checkbox__link {
   text-decoration-line: underline;
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .checkbox__icon {
@@ -175,8 +175,7 @@
   height: 15px;
   margin-right: 8px;
   background-image: url(../images/empty-checkbox.svg);
-  transition: background-image var(--transition-duration)
-    var(--transition-function);
+  transition: background-image $transition-duration $transition-function;
 }
 
 .checkbox__input:checked + .checkbox__icon {
@@ -188,14 +187,14 @@
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  color: var(--title-dark-theme-color);
+  color: $title-dark-theme-color;
   cursor: pointer;
 
   padding: 10px 55px;
   border-radius: 4px;
   border-style: none;
   text-align: center;
-  background: var(--accent-color);
+  background: $accent-color;
 
   align-self: center;
 }

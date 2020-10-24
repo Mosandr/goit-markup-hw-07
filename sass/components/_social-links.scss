@@ -10,8 +10,8 @@
   border-radius: 50%;
 
   transition-property: background-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-function);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-function;
 }
 
 .social-links__item:not(:first-child) {
@@ -20,7 +20,7 @@
 
 .social-links__item:hover,
 .social-links__item:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 }
 
 .social-links__link {
@@ -29,16 +29,16 @@
 
 .social-links__icon {
   align-self: center;
-  fill: var(--icons-light-theme);
+  fill: $icons-light-theme;
 
   transition-property: fill;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-function);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-function;
 }
 
 .social-links__item:hover .social-links__icon,
 .social-links__item:focus .social-links__icon {
-  fill: var(--title-dark-theme-color);
+  fill: $title-dark-theme-color;
 }
 
 .social-links__item--dark-theme {
@@ -46,5 +46,5 @@
 }
 
 .social-links__icon--dark-theme {
-  fill: var(--title-dark-theme-color);
+  fill: $title-dark-theme-color;
 }
