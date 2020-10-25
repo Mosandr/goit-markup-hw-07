@@ -9,26 +9,26 @@
   background-repeat: no-repeat;
   object-position: center;
   object-fit: contain;
-}
 
-.hero__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 200px 250px;
-}
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 250px;
+  }
 
-.hero__title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  padding: 0;
-  display: inline-block;
+  &__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    display: inline-block;
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: $title-dark-theme-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $title-dark-theme-color;
+  }
 }

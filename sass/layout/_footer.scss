@@ -1,27 +1,4 @@
-.footer {
-  background: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.footer-wrapper {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer-address__list {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-address__item:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.footer__map,
-.footer__tel,
-.footer__mail {
+%footer {
   display: inline-block;
   font-weight: 400;
   font-style: normal;
@@ -30,16 +7,41 @@
   letter-spacing: 0.03em;
   color: $title-dark-theme-color-alpha;
 }
-.footer__map {
-  color: $title-dark-theme-color;
+
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__wrapper {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__map,
+  &__tel,
+  &__mail {
+    @extend %footer;
+  }
+
+  &__map {
+    color: $title-dark-theme-color;
+  }
 }
 
-.footer-social-links {
-  margin-left: 85px;
+.footer-address {
+  &__list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
-.footer-social-links__title,
-.subscribe-form__title {
+%title {
   margin-top: 0px;
   margin-bottom: 20px;
   color: $title-dark-theme-color;
@@ -51,31 +53,42 @@
   text-transform: uppercase;
 }
 
+.footer-social-links {
+  margin-left: 85px;
+  &__title {
+    @extend %title;
+  }
+}
+
 .subscribe-form {
   display: flex;
   width: 570px;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-left: auto;
-}
 
-.subscribe-form__input {
-  width: 358px;
-  height: 50px;
-  padding: 15px;
+  &__title {
+    @extend %title;
+  }
 
-  color: $title-dark-theme-color;
-  cursor: pointer;
+  &__input {
+    width: 358px;
+    height: 50px;
+    padding: 15px;
 
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-}
+    color: $title-dark-theme-color;
+    cursor: pointer;
 
-.subscribe-form__input::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: $title-dark-theme-color-alpha;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: $title-dark-theme-color-alpha;
+    }
+  }
 }

@@ -1,3 +1,14 @@
+.filter-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  &__item:not(:first-child) {
+    margin-left: 8px;
+  }
+}
+
 .filter-btn {
   padding: 6px 22px;
   border-radius: 4px;
@@ -13,20 +24,10 @@
 
   transition: color $transition-duration $transition-function,
     background $transition-duration $transition-function;
-}
-.filter-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
-}
 
-.filter-buttons__item:not(:first-child) {
-  margin-left: 8px;
-}
-
-.filter-btn:hover,
-.filter-btn:focus {
-  color: $title-dark-theme-color;
-  background: $accent-color;
+  &:hover,
+  &:focus {
+    color: $title-dark-theme-color;
+    background: $accent-color;
+  }
 }
